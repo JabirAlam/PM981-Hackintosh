@@ -29,3 +29,15 @@ You can now try to boot from the EFI if you used macrecovery.py. if you didnt, t
 Install macOS Catalina (or what version you choosed).
 
 Done!
+
+
+Credits:
+
+
+OpenCore Team,
+
+Dortania OpenCore Install Guide,
+
+https://github.com/zacharysalvatore for the Patch,
+
+Corpnewt for ProperTree and GenSMBIOS.
