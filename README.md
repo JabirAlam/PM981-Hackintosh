@@ -54,4 +54,4 @@ Corpnewt for ProperTree and GenSMBIOS.              !
 --------------------------------------------------- !
 
 
-Good luck hackintoshing!
+Good luck hackintoshing! My friends!
