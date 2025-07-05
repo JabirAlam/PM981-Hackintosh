@@ -15,7 +15,7 @@ Requirements:
 
 A already hackintoshed system on a Supported SSD (if you have only one SSD, You can try to direct install, but you'll need to add RestrictEvents.)
 
-You'll have to follow this https://github.com/tylernguyen/x1c6-hackintosh/issues/43 guide, or follow my guide here if you DONT have a macOS installation.
+You'll have to follow this https://github.com/tylernguyen/x1c6-hackintosh/issues/43 guide, or follow my guide here if you DONT have a macOS installation and only have 1 SSD.
 
 
 Guide:
@@ -30,15 +30,18 @@ Step 2.
 
 Now get Propertree and open the config.plist file of the EFI from the releases page. Download the EFI if not already https://github.com/JabirAlam/PM981-Hackintosh/releases/tag/v1.0.0, then use propertree to customize to your PC's liking. 
 
-You can now try to boot from the EFI if you used macrecovery.py. if you didnt, then use this guide. https://dortania.github.io/OpenCore-Install-Guide/installer-guide/windows-install.html#making-the-installer, FOLLOW only THAT PAGE, DONT go to the NEXT PAGE.
+You can now try to boot from the EFI if you used a offline installer. if you didnt, follow this guide: https://github.com/JabirAlam/Offline-Installer. if you are using another version, go to the community.
 
-Install macOS Catalina (or what version you choosed).
+then put the EFI we edited to the "EFI" partition of the USB drive, if no EFI partition is shown, unplug the USB drive and replug it, IF its still NOT SHOWING, you didnt follow the offline installer guide then.
+
+boot from the USB drive after adjusting BIOS settings and Install macOS Catalina (or what version you choosed)
 
 Done!
 
 
 Credits:
 
+---------------------------------------------------
 
 OpenCore Team,
 
@@ -47,3 +50,7 @@ Dortania OpenCore Install Guide,
 https://github.com/zacharysalvatore for the Patch,
 
 Corpnewt for ProperTree and GenSMBIOS.
+
+-----------------------------------------------------
+
+Good luck hackintoshing!
