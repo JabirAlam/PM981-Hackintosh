@@ -39,6 +39,8 @@ boot from the USB drive after adjusting BIOS settings and Install macOS Catalina
 Done!
 
 
+***************************************************
+
 Credits:
 
 ---------------------------------------------------
@@ -51,6 +53,8 @@ https://github.com/zacharysalvatore for the Patch,
 
 Corpnewt for ProperTree and GenSMBIOS.
 
------------------------------------------------------
+---------------------------------------------------
+
+***************************************************
 
 Good luck hackintoshing!
