@@ -41,17 +41,17 @@ Done!
 
 Credits:
 
---------------------------------------------------- !
-                                                    !
-OpenCore Team,                                      !
-                                                    !
-Dortania OpenCore Install Guide,                    !
-                                                    !
-https://github.com/zacharysalvatore for the Patch,  !
-                                                    !
-Corpnewt for ProperTree and GenSMBIOS.              !   
-                                                    !
---------------------------------------------------- !
+--------------------------------------------------- 
+
+OpenCore Team,
+
+Dortania OpenCore Install Guide,
+
+https://github.com/zacharysalvatore for the Patch,
+
+Corpnewt for ProperTree and GenSMBIOS. 
+
+---------------------------------------------------
 
 
 Good luck hackintoshing! My friends!
