@@ -39,22 +39,19 @@ boot from the USB drive after adjusting BIOS settings and Install macOS Catalina
 Done!
 
 
-***************************************************
-
 Credits:
 
----------------------------------------------------
+--------------------------------------------------- !
+                                                    !
+OpenCore Team,                                      !
+                                                    !
+Dortania OpenCore Install Guide,                    !
+                                                    !
+https://github.com/zacharysalvatore for the Patch,  !
+                                                    !
+Corpnewt for ProperTree and GenSMBIOS.              !   
+                                                    !
+--------------------------------------------------- !
 
-OpenCore Team,
-
-Dortania OpenCore Install Guide,
-
-https://github.com/zacharysalvatore for the Patch,
-
-Corpnewt for ProperTree and GenSMBIOS.
-
----------------------------------------------------
-
-***************************************************
 
 Good luck hackintoshing!
