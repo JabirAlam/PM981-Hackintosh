@@ -13,10 +13,11 @@ The process described in this document could cause irreversible damage to your l
 
 Requirements:
 
-A already hackintoshed system on a Supported SSD (if you have only one SSD, You can try to direct install, but you'll need to add RestrictEvents.)
+1. A already hackintoshed system on a Supported SSD (if you have only one SSD, You can try to direct install, but you'll need to add RestrictEvents.)
 
-You'll have to follow this https://github.com/tylernguyen/x1c6-hackintosh/issues/43 guide, or follow my guide here if you DONT have a macOS installation and only have 1 SSD.
+2. You'll have to follow this https://github.com/tylernguyen/x1c6-hackintosh/issues/43 guide, or follow my guide here if you DONT have a macOS installation and only have 1 SSD.
 
+3. Patience! You're installing to a PM981! you will need to wait! it will take about 2 days and 15 hours! If you get stuck at "Less than a minute remaining", its not actually stuck. its just slow because of patches..
 
 Guide:
 
