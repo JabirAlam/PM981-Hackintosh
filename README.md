@@ -29,7 +29,11 @@ then type your Model Identifier. I recommend MacBookPro15,2. but if your using a
 
 Step 2.
 
-Now get Propertree and open the config.plist file of the EFI from the releases page. Download the EFI if not already https://github.com/JabirAlam/PM981-Hackintosh/releases/tag/v1.0.0, then use propertree to customize to your PC's liking. 
+You have to dissemble the ssdt_nvme.aml file in the "ACPI" folder in this repository's EFI. then you'll have to replace my BIOS Device Name with your DRIVE's BIOS DEVICE NAME. then follow step 3. bellow.
+
+Step 3.
+
+Now get Propertree and open the config.plist file of the EFI from the releases page. Download the EFI if not already https://github.com/JabirAlam/PM981-Hackintosh/releases/tag/v1.0.0, then use propertree to customize to your PC's liking. Preferrably use the "config.plist" part of the Dortania guide aswell.
 
 You can now try to boot from the EFI if you used a offline installer. if you didnt, follow this guide: https://github.com/JabirAlam/Offline-Installer. if you are using another version, go to the community.
 
