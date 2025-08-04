@@ -17,7 +17,7 @@ Requirements:
 
 2. You'll have to follow this https://github.com/tylernguyen/x1c6-hackintosh/issues/43 guide, or follow my guide here if you DONT have a macOS installation and only have 1 SSD.
 
-3. Patience! You're installing to a PM981! you will need to wait! it will take about 2 days and 15 hours! If you get stuck at "Less than a minute remaining", its not actually stuck. its just slow because of patches..
+3. Patience! You're installing to a PM981! you will need to wait! it can take above 1 hour(s)! If you get stuck at "Less than a minute remaining", its not actually stuck. its just slow because of patches..
 
 Guide:
 
