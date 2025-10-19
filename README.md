@@ -1,62 +1,128 @@
-# PM981-Hackintosh
-macOS EFI for any PC using PM981a/PM981 (you'll have to customize the EFI to make it compatible with your PC.)
+🚀 PM981-Hackintosh
 
-⚠️ Caution: This Project is in development release. The EFI may be unstable in some PC's. As PM981 and PM981a are not supported in macOS. Please make sure you DONT delete any of the kexts.
-Please Backup your data. Please do NOT use MacOS Tahoe Beta, as that is unsupported, it wont work with the PM981, i recommend using macOS Catalina for this EFI.
+EFI for macOS on systems using Samsung PM981 or PM981a SSDs
+(You’ll need to customize this EFI to match your hardware.)
 
-⚠️ Mandatory Disclaimer
-By continuing, you acknowledge that you have read and understood the contents of the following disclaimer, and consent to their terms.
+⚠️ Caution
 
-The process described in this document could cause irreversible damage to your laptop, and you should prepare yourself for that outcome before you begin. I accept absolutely no responsibility for the consequences of anyone choosing to follow or ignore any of the instructions in this document, and make no guarantees about the quality or effectiveness of the software in this repo.
+This project is currently in development — it may be unstable on certain PCs since PM981/PM981a SSDs are not officially supported on macOS.
 
+🧠 Important Notes:
 
+❌ Do not delete any kexts included in this EFI.
 
-Requirements:
+💾 Back up your data before you begin.
 
-1. A already hackintoshed system on a Supported SSD (if you have only one SSD, You can try to direct install, but you'll need to add RestrictEvents.)
+🚫 Do not use macOS Tahoe Beta — it’s unsupported and won’t work with PM981 drives.
 
-2. You'll have to follow this https://github.com/tylernguyen/x1c6-hackintosh/issues/43 guide, or follow my guide here if you DONT have a macOS installation and only have 1 SSD.
+✅ Recommended macOS version: Catalina for best results.
 
-3. Patience! You're installing to a PM981! you will need to wait! it can take above 3 hour(s)! If you get stuck at "Less than a minute remaining", its not actually stuck. its just slow because of patches..
+⚖️ Disclaimer
 
-Guide:
+By continuing, you acknowledge that you’ve read and understood the following disclaimer and agree to its terms.
 
+⚠️ The process described here can potentially cause irreversible damage to your device.
+I take no responsibility for any hardware damage, data loss, or software issues that may result.
+This EFI is provided as-is, with no guarantees of stability or compatibility.
 
-Step 1.
+🧩 Requirements
 
-first. you have to get a SMBIOS, for that, use GenSMBIOS, download it, install python from the Microsoft Store or other places. and run the .bat file after extracting the GenSMBIOS folder, choose option 3,
-then type your Model Identifier. I recommend MacBookPro15,2. but if your using another version instead of Catalina, then to find that, follow this guide https://dortania.github.io/OpenCore-Install-Guide/extras/smbios-support.html#macbook. FOLLOW ONLY THAT PAGE, DONT GO TO THE NEXT PAGE.
+🖥️ A working Hackintosh system with a supported SSD.
 
-Step 2.
+If you only have one SSD, you can attempt a direct installation — but make sure to include RestrictEvents.kext.
 
-You have to dissemble the ssdt_nvme.aml file in the "ACPI" folder in this repository's EFI. then you'll have to replace my BIOS Device Name with your DRIVE's BIOS DEVICE NAME. then follow step 3. bellow.
+🧭 Follow either tylernguyen/x1c6-hackintosh#43
 
-Step 3.
+or my guide (below) if you don’t already have macOS installed.
 
-Now get Propertree and open the config.plist file of the EFI from the releases page. Download the EFI if not already https://github.com/JabirAlam/PM981-Hackintosh/releases/tag/v1.0.0, then use propertree to customize to your PC's liking. Preferrably use the "config.plist" part of the Dortania guide aswell.
+⏳ Patience — installing macOS on a PM981 can take 3+ hours.
 
-You can now try to boot from the EFI if you used a offline installer. if you didnt, follow this guide: https://github.com/JabirAlam/Offline-Installer. if you are using another version, go to the community.
+If it says “Less than a minute remaining,” it’s not stuck — it’s just very slow because of NVMe patches.
 
-then put the EFI we edited to the "EFI" partition of the USB drive, if no EFI partition is shown, unplug the USB drive and replug it, IF its still NOT SHOWING, you didnt follow the offline installer guide then.
+🧰 Installation Guide
+🔹 Step 1 — Generate an SMBIOS
 
-boot from the USB drive after adjusting BIOS settings and Install macOS Catalina (or what version you choosed)
+Download GenSMBIOS
+.
 
-Done!
+Install Python (from the Microsoft Store or another trusted source).
 
+Extract the folder and run GenSMBIOS.bat.
 
-Credits:
+Select Option 3, then type your model identifier.
 
---------------------------------------------------- 
+Recommended:
 
-OpenCore Team,
-
-Dortania OpenCore Install Guide,
-
-https://github.com/zacharysalvatore for the Patch,
-
-Corpnewt for ProperTree and GenSMBIOS. 
-
----------------------------------------------------
+MacBookPro15,2
 
 
-Good luck hackintoshing! My friends!
+(Best for macOS Catalina)
+
+For other macOS versions, check:
+👉 SMBIOS Support – Dortania Guide
+
+(Follow only that page — don’t continue to the next one.)
+
+🔹 Step 2 — Modify the NVMe SSDT
+
+Locate ssdt_nvme.aml inside the ACPI folder.
+
+Decompile it using your preferred method (e.g., iasl).
+
+Replace my BIOS Device Name with your drive’s actual BIOS device name.
+
+Recompile and save it, then move on to Step 3.
+
+Example (inside your DSDT/ACPI path):
+
+Device (NVME)
+    Name (_ADR, 0x00170000)
+
+
+Replace the device path accordingly.
+
+🔹 Step 3 — Edit config.plist
+
+Download ProperTree
+.
+
+Get the EFI from the latest release
+.
+
+Open config.plist in ProperTree and edit it for your hardware.
+
+Reference the config.plist section of the
+👉 Dortania OpenCore Guide
+.
+
+If using my Offline Installer
+:
+
+Mount the EFI partition of your USB.
+
+Copy the modified EFI folder to it.
+
+If you can’t see the EFI partition, unplug and replug your USB.
+
+If it’s still missing, you may have missed a step in the Offline Installer guide.
+
+Reboot, select your USB from BIOS, and install macOS Catalina (or your preferred version).
+
+✅ Installation Complete!
+
+🎉 Congratulations! You now have macOS running on a Samsung PM981 / PM981a SSD.
+Expect slower performance compared to supported drives — but it works!
+
+🙌 Credits
+
+Big thanks to everyone who made this possible:
+
+OpenCore Team
+
+Dortania for their detailed OpenCore Install Guide
+
+zacharysalvatore for the NVMe patch
+
+CorpNewt for ProperTree & GenSMBIOS
+
+🍀 Good luck and happy Hackintoshing, my friends!
